@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* Informacion de avance
+Agregue un index para poder mostar los productos creados y en el futuro poder seleccionar y/o agregar al carro de compras
