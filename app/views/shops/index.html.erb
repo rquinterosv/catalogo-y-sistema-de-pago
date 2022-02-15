@@ -26,6 +26,15 @@
         <td><%= product.price %></td>
         <td><%= link_to 'Show', shop_path(product) %></td>
 
+
+        <td>
+            <%= form_for @order_item do |f|%>
+            <%= f.hidden_field :product_id, :value => product.id %>
+            <%= f.number_field :quantity, :value => 1, :min => 1%>
+            <%= f.submit "Agregar al carro"%>
+            <% end%>
+        </td>
+
       </tr>
     <% end %>
   </tbody>
@@ -33,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+
