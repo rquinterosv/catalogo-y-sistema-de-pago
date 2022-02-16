@@ -6,10 +6,6 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Description</th>
-      <th>Category</th>
-      <th>Sku</th>
-      <th>Stock</th>
       <th>Price</th>
       <th colspan="3"></th>
     </tr>
@@ -19,10 +15,6 @@
     <% @products.each do |product| %>
       <tr>
         <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.category %></td>
-        <td><%= product.sku %></td>
-        <td><%= product.stock %></td>
         <td><%= product.price %></td>
         <td><%= link_to 'Show', shop_path(product) %></td>
 
